@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerNewTransfer">
+   <children>
+      <TextField fx:id="transferField" layoutX="235.0" layoutY="176.0" promptText="Transfer Code" />
+      <Button fx:id="addButton" layoutX="362.0" layoutY="266.0" mnemonicParsing="false" onAction="#newTransfer" text="Add" />
+      <Button fx:id="backButton" layoutY="374.0" mnemonicParsing="false" onAction="#backProfile" text="Back" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" />
+   </children>
+</AnchorPane>

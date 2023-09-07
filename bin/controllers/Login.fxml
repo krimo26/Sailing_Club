@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerLogin">
+   <children>
+      <Text layoutX="96.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="memberButton" layoutX="49.0" layoutY="138.0" mnemonicParsing="false" selected="true" text="Member">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="staffButton" layoutX="243.0" layoutY="138.0" mnemonicParsing="false" text="Staff" toggleGroup="$type" />
+      <TextField fx:id="usernameField" layoutX="49.0" layoutY="188.0" prefHeight="24.0" prefWidth="242.0" promptText="Username" />
+      <PasswordField fx:id="passwordField" layoutX="49.0" layoutY="252.0" prefHeight="24.0" prefWidth="242.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="143.0" layoutY="309.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Text layoutX="423.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need an Account?" />
+      <Button fx:id="signinButton" layoutX="450.0" layoutY="212.0" mnemonicParsing="false" onAction="#registration" text="Sign-In" />
+      <Line endX="28.0" endY="336.0" layoutX="322.0" layoutY="64.0" startX="28.0" startY="-64.0" />
+      <Button fx:id="closeButton" layoutX="7.0" layoutY="374.0" mnemonicParsing="false" onAction="#close" text="Close" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" />
+   </children>
+</AnchorPane>

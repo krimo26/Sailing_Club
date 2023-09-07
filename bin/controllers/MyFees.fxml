@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerMyFees">
+   <children>
+      <Line endX="509.0" layoutX="95.0" layoutY="120.0" startX="-100.0" />
+      <Text layoutX="202.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership fee expiring date:" />
+      <Label fx:id="dateLabel" alignment="CENTER" layoutY="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="mempayButton" layoutX="281.0" layoutY="78.0" mnemonicParsing="false" onAction="#payMembershipFee" text="Pay" />
+      <TableView fx:id="storageTable" layoutX="23.0" layoutY="153.0" prefHeight="200.0" prefWidth="380.0">
+        <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="121.0" text="Expiring Date" />
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="Boat ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="117.0" text="Boat Name" />
+            <TableColumn fx:id="valueColumn" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <TextField fx:id="boatField" layoutX="416.0" layoutY="229.0" promptText="Boat ID" />
+      <Button fx:id="stopayButton" layoutX="481.0" layoutY="266.0" mnemonicParsing="false" onAction="#payStorageFee" text="Pay" />
+      <Button fx:id="menuButton" layoutX="-4.0" layoutY="374.0" mnemonicParsing="false" onAction="#backMenu" text="Menu" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" />
+   </children>
+</AnchorPane>

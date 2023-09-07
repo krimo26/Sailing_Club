@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerEnrolBoat">
+   <children>
+      <TableView fx:id="compTable" layoutX="14.0" layoutY="20.0" prefHeight="163.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="compnameColumn" prefWidth="174.0" text="Competition Name" />
+          <TableColumn fx:id="compidColumn" prefWidth="176.0" text="Competition ID" />
+            <TableColumn fx:id="compdateColumn" prefWidth="113.0" text="Date" />
+            <TableColumn fx:id="compfeeColumn" prefWidth="95.0" text="Fee" />
+        </columns>
+      </TableView>
+      <TableView fx:id="boatTable" layoutX="14.0" layoutY="202.0" prefHeight="163.0" prefWidth="355.0">
+        <columns>
+          <TableColumn fx:id="boatnameColumn" prefWidth="180.0" text="Boat Name" />
+          <TableColumn fx:id="boatidColumn" prefWidth="173.0" text="Boat ID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="compField" layoutX="406.0" layoutY="259.0" promptText="Competition ID" />
+      <TextField fx:id="boatField" layoutX="405.0" layoutY="305.0" promptText="Boat ID" />
+      <Button fx:id="enrolButton" layoutX="466.0" layoutY="342.0" mnemonicParsing="false" onAction="#enrolBoat" text="Enrol" />
+      <Button fx:id="backButton" layoutY="374.0" mnemonicParsing="false" onAction="#backCompetitions" text="Back" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" />
+   </children>
+</AnchorPane>

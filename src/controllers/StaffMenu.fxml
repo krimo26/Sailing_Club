@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerStaffMenu">
+   <children>
+      <Text layoutX="200.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Menu">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Label fx:id="usernameLabel" layoutX="10.0" layoutY="388.0" prefHeight="16.0" prefWidth="180.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" />
+      <Button fx:id="profileButton" layoutX="59.0" layoutY="107.0" mnemonicParsing="false" onAction="#viewProfile" prefHeight="43.0" prefWidth="172.0" text="My profile" />
+      <Button fx:id="membershipButton" layoutX="59.0" layoutY="159.0" mnemonicParsing="false" onAction="#viewMembershipF" prefHeight="43.0" prefWidth="172.0" text="Membership fee" />
+      <Button fx:id="storageButton" layoutX="59.0" layoutY="213.0" mnemonicParsing="false" onAction="#viewStorageF" prefHeight="43.0" prefWidth="172.0" text="Storage fee" />
+      <Button fx:id="competitionsButton" layoutX="59.0" layoutY="263.0" mnemonicParsing="false" onAction="#viewCompetitions" prefHeight="43.0" prefWidth="172.0" text="Competitions" />
+      <Text layoutX="270.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit your personal data" />
+      <Text layoutX="272.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View membership fees situation" />
+      <Text layoutX="270.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View storage fees situation" />
+      <Text layoutX="272.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View competions situation and eventual fees" />
+      <Button fx:id="logoutButton" layoutX="532.0" layoutY="364.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="65.0" text="Logout" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+      <Label fx:id="usernameLabel" layoutX="1.0" layoutY="378.0" prefHeight="16.0" prefWidth="226.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" />
+   </children>
+</AnchorPane>

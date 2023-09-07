@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"actors","c":"Staff","l":"getPassword()"},{"p":"actors","c":"Staff","l":"getUsername()"},{"p":"actors","c":"Staff","l":"setPassword(String)","url":"setPassword(java.lang.String)"},{"p":"actors","c":"Staff","l":"Staff()","url":"%3Cinit%3E()"},{"p":"actors","c":"Staff","l":"Staff(String, String)","url":"%3Cinit%3E(java.lang.String,java.lang.String)"}]

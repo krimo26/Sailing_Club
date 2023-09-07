@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerCompetitionList">
+   <children>
+      <Text layoutX="137.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competitions">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+      <TableView fx:id="competitionTable" layoutX="24.0" layoutY="100.0" prefHeight="200.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="206.0" text="Name" />
+          <TableColumn fx:id="idColumn" prefWidth="158.0" text="ID" />
+            <TableColumn fx:id="dateColumn" prefWidth="98.0" text="Date" />
+            <TableColumn fx:id="feeColumn" prefWidth="90.0" text="Fee" />
+        </columns>
+      </TableView>
+      <TextField fx:id="competitionField" layoutX="130.0" layoutY="325.0" promptText="Competition ID" />
+      <Button fx:id="viewpButton" layoutX="359.0" layoutY="325.0" mnemonicParsing="false" onAction="#viewPartecipants" text="View Partecipants" />
+      <Button fx:id="menuButton" layoutY="374.0" mnemonicParsing="false" onAction="#backMenu" text="Menu" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" />
+   </children>
+</AnchorPane>
